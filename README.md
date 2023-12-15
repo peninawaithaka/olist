@@ -1,15 +1,13 @@
-Welcome to your new dbt project!
+# Olist Ecommerce Analysis
 
-### Using the starter project
+## Analytics Engineering
+### This project is an implementation of the Modern Data Stack in analytics engineeering
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Data Stack
 
+-   AWS S3 bucket - datasource
+-   Snowflake - analytics data warehouse
+-   DataBuildTool(dbt) - data transformation tool
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## Public Dataset Used:
+### A Brazilian ecommerce public dataset of orders made at Olist Store. Brazilian E-Commerce Public Dataset by Olist

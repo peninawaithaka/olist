@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: olist
+    database: olist
+    schema: raw
+    tables: 
+      - name: raw_customer_dataset
+      - name: raw_geolocation_dataset
+      - name: raw_orders_dataset
+      - name: raw_order_items_dataset
+      - name: raw_order_payments_dataset
+      - name: raw_order_reviews_dataset
+      - name: raw_products_dataset
+      - name: raw_sellers_dataset
+      

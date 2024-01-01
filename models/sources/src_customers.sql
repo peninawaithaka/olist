@@ -1,6 +1,9 @@
 -- fetch all source data from raw_customers dataset where ids are not null
 -- remove the "" in varchar ids
 
+--to do
+-- test for uniqueness and not null for customer id and customer unique_id
+
 with raw_customers as (
 
     select * from {{ source('olist', 'raw_customers_dataset')}}

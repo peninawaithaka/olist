@@ -3,6 +3,9 @@
 -- clean up review_answer_timestamp
 -- clean up quotations
 
+--to do
+-- test that order_id is not null
+
 with raw_order_reviews as (
 
     select * from {{ source('olist', 'raw_order_reviews_dataset')}}

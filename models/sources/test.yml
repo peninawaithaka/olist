@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: src_customers
+    description: ...
+    columns:
+      - name: customer_unique_id
+        description: ...
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: ...
+        tests:
+         - not_null
+  - name: src_order_items
+    description: ...
+    columns:
+      - name: order_id
+        description: ...
+        tests:
+          - not_null
+          

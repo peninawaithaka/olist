@@ -1,0 +1,58 @@
+version: 2
+models:
+  - name: src_customers
+    description: olist's cleansed customer data
+    columns:
+      - name: customer_unique_id
+        description: Each customer has a unique id 
+        tests:
+          - unique:
+              config:
+                store_failures: true 
+          - not_null
+      - name: customer_id
+        description: Each customer has a customer id
+        tests:
+         - not_null
+
+  - name: src_orders
+    description: olist's cleansed orders data
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships: 
+              to: ref('src_customers')
+              field: customer_id
+      
+  - name: src_order_items
+    description: olist's order items cleansed source data
+    columns:
+      - name: order_id
+        description: Primary key in the order items table
+        tests:
+          - not_null
+
+  - name: src_order_payments
+    description: Olist's cleansed order payments data
+    columns:
+      - name: order_id
+        tests:
+        - not_null
+
+  - name: src_products
+    description: Olist's cleansed products data
+    columns:
+      - name: product_id
+        tests:
+        - not_null
+
+  - name: src_sellers
+    description: Olist's cleansed sellers data
+    columns:
+      - name: seller_id
+        tests:
+        - not_null

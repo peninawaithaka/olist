@@ -6,6 +6,8 @@
 -- test for not null for order_id and customer_id
 -- test for accepted values in the order status column
 
+-- test that each customer id in this model exist as a customer id in the customer table
+
 with raw_orders as (
 
     select * from {{ source('olist', 'raw_orders_dataset')}}
